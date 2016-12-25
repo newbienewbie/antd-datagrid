@@ -133,7 +133,7 @@ ReactDOM.render(<List/>,document.getElementById('app'));
 执行`HTML`模板文件，即可显示`Datagrid`，支持远程取数、分页、单行点击。
 
 最终的显示效果类似于：
-```
+
 title  | status | createdAt                         | updatedAt
 -------|--------|-----------------------------------|-------------
 4-1    |   15 	| Sun Dec 25 2016 20:38:18 GMT+0800 | Sun Dec 25 2016 20:38:18 GMT+0800
@@ -142,5 +142,6 @@ title  | status | createdAt                         | updatedAt
 4-4    |   18	| Sun Dec 25 2016 20:38:18 GMT+0800 | Sun Dec 25 2016 20:38:18 GMT+0800
 4-5    |   19   | Sun Dec 25 2016 20:38:18 GMT+0800 | Sun Dec 25 2016 20:38:18 GMT+0800
 
-< 1 2 3 4 5 6 ...20 >
-```
+< 1 2 3 4 5 6 ... 20 >
+
+点击任意一行后，将会触发相应的监听器。
