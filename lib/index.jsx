@@ -38,6 +38,10 @@ const Datagrid=React.createClass({
                     current:page,
                     size:size,
                 });
+            })
+            .catch(error=>{
+                console.log(`error happens when fetching and setting state\t`,error);
+                alert(error);
             });
     },
 
