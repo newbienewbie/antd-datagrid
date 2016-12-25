@@ -1,0 +1,22 @@
+
+module.exports={
+    entry:{
+        'index':'index.js',
+    },
+    output:{
+        path:__dirname,
+        filename:'[name].js',
+    },
+    module:{
+        loaders:[
+            {
+                test:/\.jsx?$/,
+                loaders:['babel-loader'],
+            },
+            {
+                test:/\.css$/,
+                loaders:['style-loader','css-loader'],
+            }
+        ],
+    },
+};
