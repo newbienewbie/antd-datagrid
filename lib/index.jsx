@@ -29,15 +29,16 @@ const Datagrid=React.createClass({
         this.fetchAndSetState(this.state.current,this.state.size,{});
     },
 
-    fetchAndSetState:function(page,size,condition,...args){
+    fetchAndSetState:function(page=1,size=10,condition={},...args){
         this.props.fetch(page,size,condition)
             .then(info=>{
                 this.setState({
                     dataSource:info.rows,
                     total:info.count,
                     current:page,
+                    size:size,
                 });
-            })
+            });
     },
 
     render:function(){
