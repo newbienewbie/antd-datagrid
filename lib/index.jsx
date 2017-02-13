@@ -34,7 +34,7 @@ const Datagrid=React.createClass({
         if(nextProps.key==this.props.refreshCode){
             return;
         }else{
-            this.fetchAndSetState(page,this.state.size,this.props.condition);
+            this.fetchAndSetState(this.state.page,this.state.size,this.props.condition);
         }
     },
 
