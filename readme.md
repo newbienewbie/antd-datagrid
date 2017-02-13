@@ -1,4 +1,9 @@
 
+## 发布
+
+```
+> npm run babel
+```
 
 ## demo
 
