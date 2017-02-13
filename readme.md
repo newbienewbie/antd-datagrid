@@ -87,6 +87,7 @@ export const List=React.createClass({
                 onRowClick={(record,index)=>{
                     console.log(record,index);
                 }}
+                refreshCode={1}
             />
         </div>);
     }

@@ -1,6 +1,6 @@
 {
   "name": "antd-datagrid",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "datagrid use antd",
   "main": "index.js",
   "scripts": {
